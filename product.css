@@ -66,6 +66,12 @@ input{
 	background-color: rgba(255, 255, 255, 0.5); 
 }
 
+.name h1{
+	margin-top: -45px;
+	color: white;
+	font-size: 26px;
+}
+
 .textbox{
 	clear: both;
 	background-color: #ffffff;
@@ -76,15 +82,19 @@ input{
 
 .textbox .paragraph h2{
 	margin-bottom: -10px;
-	margin-left: -15px;
+	margin-top: 1px;
+	margin-left: 10px;
 }
 
 .textbox .paragraph{
 	color: #000000;
 	float: left;
+}
+
+.textbox .paragraph p{
 	width: 90%;
-	margin-left: 4%;
-	padding-right: 3%;
+	margin-left: 50px;
+	padding-right: 50px;
 }
 
 footer{
