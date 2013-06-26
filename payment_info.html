@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-eqiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<link href='http://fonts.googleapis.com/css?family=Homenaje&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/payment_info.css" />
+		<title>Photo Bros</title>
+	</head>
+	<body>
+		<nav>
+			<a href="home.html"><h1>Photo Bros</h1></a>
+			<ul>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="cart.html">Cart</a></li>
+				<li><a href="about_us.html">About Us</a></li>
+				<li><a href="promotions.html">Promotions</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="banner">
+			<header>
+				<img src="images/owl_banner.jpg">
+				<h2>
+					Payment Information
+				</h2>
+			</header>
+		</div>
+		<form id="payment">
+			<fieldset>
+				<legend>Your Information</legend>
+				<ol>
+					<li>
+						<label for="name">Name</label>
+						<input id="name" name=name type=text placeholder="First Name" required autofocus/>
+						<input id="name" name=name type=text placeholder="Last Name" required />
+					</li>
+					
+					<li>
+						<label for="email">Email</label>
+						<input id="email" name=email type="email" placeholder="example@domain.ca" />
+					</li>
+				</ol>
+			</fieldset>
+
+			<fieldset>
+				<legend>Delivery address</legend>
+				<ol>
+					<li>
+						<label for="street">Street</label>
+						<input id="street" name=name type=text required />
+					</li>
+
+					<li>
+						<label for="city">City</label>
+						<input id="city" name=name type=text required />
+					</li>
+
+					<li>
+						<label for="province">Province</label>
+						<select class="province">
+							<option value="start"></option>
+							<option value="alberta">Alberta</option>
+							<option value="british_columbia">British Columbia</option>
+							<option value="manitoba">Manitoba</option>
+							<option value="new_brunswick">New Brunswick</option>
+							<option value="newfoundland">Newfoundland</option>
+							<option value="northwest_territories">Northwest Territories</option>
+							<option value="nova_scotia">Nova Scotia</option>
+							<option value="nunavut">Nunavut</option>
+							<option value="ontario">Ontario</option>
+							<option value="prince_edward_island">Prince Edward Island</option>
+							<option value="québec">Quebec</option>
+							<option value="saskatchewan">Saskatchewan</option>
+							<option value="yukon">Yukon</option>
+						</select>
+					</li>
+				</ol>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Card details</legend>
+				<ol>
+					<li>
+						<input id="visa" name="cardtype" type="radio" />
+						<label for="visa">VISA</label>
+					</li>
+
+					<li>
+						<input id="amex" name="cardtype" type="radio" />
+						<label for="amex">AmEx</label>
+					</li>
+
+					<li>
+						<input id="mastercard" name="cardtype" type="radio" />
+						<label for="mastercard">Mastercard</label>
+					</li>
+
+					<li>
+						<input id="paypal" name="cardtype" type="radio" />
+						<label for="paypal">Paypal</label>
+					</li>
+				</ol>
+				<a href="thank_you.html"><button type="submit">Buy Now</button></a>
+			</fieldset>
+
+			
+		</form>
+		<footer>
+			<p>
+				&copy;2013. All rights reserved.
+			</p>
+		</footer>
+	</body>
+</html>

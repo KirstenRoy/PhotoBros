@@ -1,0 +1,155 @@
+html{
+	background-color: #000000;
+	max-width: 100%;
+	font-family: 'Homenaje', sans-serif;
+	font-size:130%;
+}
+
+body{
+	margin: 0;
+}
+
+h1{
+	color: #ffffff;
+	margin-left: 10px;
+}
+
+h2{
+	color: #ffffff;
+	float: left;
+	font-size: 2em;
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 5px;
+
+}
+
+nav{
+	color: #ffffff;
+	text-align: right;
+}
+
+nav ul{
+	margin-right: 10px;
+	-moz-padding-start:0;
+	-webkit-padding-start:0;
+}
+
+nav ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 0.9em;
+}
+
+nav h1{
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top:-15px;
+	margin-left: 10px;
+}
+
+a, a:visited{
+	color: #cccccc;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+a:active, a:hover{
+	color: #333333;
+	text-decoration:none;
+}
+
+.banner img{
+	width: 100%;
+}
+
+.about_content{
+	clear:both;
+	margin:3em;
+}
+
+.about_content p{
+	color:#ccc;
+	float:left;
+	width:35%;
+	display:inline;
+	font-size:110%;
+}
+
+.about_content img{
+	float:right;
+	width:60%;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+	margin-top: 0.3em;
+	color: #adadad;
+	font-size: 80%;
+	border-top: 1px dotted #e8e8e8;
+	
+}
+
+/*----------------------Tablet-------------------------*/
+@media (max-width: 900px){
+	a h1{
+		color: blue;
+	}
+
+	html{
+		font-size:150%;
+		min-width: 480px;
+	}
+		
+	.about_content p{
+		width: 100%;
+	}
+
+	.about_content img{
+		width: 100%;
+	}
+}
+
+/*-------------------------Phone----------------------------*/
+@media (max-width: 480px){
+	a h1{
+		color: purple;
+	}
+
+	html{
+		font-size:150%;
+		min-width: 400px;
+	}
+
+	nav{
+		max-width: 480px;
+		text-align: center;
+	}
+
+	nav a h1{
+		float: none;
+		margin: 0;
+		font-size: 50px;
+	}
+
+	nav ul li{
+		float: none;
+		font-size: 30px;
+		text-align: center;
+		margin: 20px;
+	}
+
+	.about_content img{
+		float: left;
+		width: 350px;
+		margin-left: -50px;
+	}
+
+	.about_content p{
+		width: 350px;
+		float: left;
+		margin-left: -50px;
+	}
+}

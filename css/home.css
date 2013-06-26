@@ -2,6 +2,12 @@ html{
 	background-color: #000000;
 	min-width: 650px;
 	max-width: 100%;
+	font-family: 'Homenaje', sans-serif;
+	font-size:130%;
+}
+
+h1{
+	font-size:2.5em;
 }
 
 body{
@@ -15,7 +21,6 @@ body{
 nav{
 	color: white;
 	text-align: right;
-	font-size: 15px;
 }
 
 nav ul{
@@ -28,23 +33,24 @@ nav ul li, h1{
 	display: inline;
 	list-style: none;
 	margin-left: 0.9em;
-	font-family: 'Domine', serif;
 }
 
 a, a:visited{
 	color: #cccccc;
 	font-weight: bold;
+	text-decoration:none;
 }
 
 a:active, a:hover{
 	color: #333333;
+	text-decoration:none;
 }
 
 .container{
 	position: fixed;
 	left: 0;
 	bottom: 45px;
-	background-color: rgba(255, 255, 255, 0.5); 
+	background-color: rgba(255, 255, 255, 0.7); 
 }
 
 .name{
@@ -98,4 +104,35 @@ footer{
 	color: #adadad;
 	font-size: 80%;
 	border-top: 1px dotted #e8e8e8;
+}
+
+@media (max-width: 601px){
+	html{
+		font-size:150%;
+	}
+	
+	.background img{
+		height: 100%;
+		width:auto;	
+	}
+	
+	.background{
+		height:100%;
+	}
+	
+	.textbox .paragraph{
+		width: 90%;
+		margin-left: 4%;
+		padding-right: 3%;
+		border-right: hidden;
+		border-bottom: 3px solid #1E1E1E;
+	}
+	
+	.textbox .updates{
+		clear:both;
+		float:left;
+		width: 90%;
+		margin-left: 4%;
+		padding-right: 3%;
+	}
 }

@@ -1,0 +1,203 @@
+html{
+	background-color: #000000;
+	min-width: 650px;
+	max-width: 100%;
+	font-family: 'Homenaje', sans-serif;
+	font-size:130%;
+}
+
+body{
+	margin: 0;
+}
+
+h1{
+	color: #ffffff;
+	margin-left: 10px;
+}
+
+h2{
+	color: #ffffff;	
+	font-size: 2em;
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+nav{
+	color: #ffffff;
+	text-align: right;
+}
+
+nav ul{
+	margin-right: 10px;
+	-moz-padding-start:0;
+	-webkit-padding-start:0;
+}
+
+nav ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 0.9em;
+}
+
+nav h1{
+	float:left;
+	margin:0;
+	padding:0;
+	margin-top:-15px;
+	margin-left: 10px;
+}
+
+a, a:visited{
+	color: #cccccc;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+a:active, a:hover{
+	color: #333333;
+	text-decoration:none;
+}
+
+.banner img{
+	width: 100%;
+}
+
+form{
+	margin: 20px;
+}
+
+label, legend{
+	color: white;
+}
+
+ol li{
+	margin: 10px;
+}
+
+input#email{
+	width: 282px;
+}
+
+textarea{
+	width:100%;
+	resize:none;
+}
+
+button{
+	clear:both;
+	float: right;
+	margin-right:60px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: #2B8707;
+	border: none;
+	border-radius: 10px;
+	color: #ffffff;
+	display: block;
+	font: Georgia, Times, serif;
+	padding: 7px 20px;
+}
+
+button:hover{
+	background: #1C6E01;
+	cursor: pointer;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+	margin-top: 6em;
+	color: #adadad;
+	font-size: 80%;
+	border-top: 1px dotted #e8e8e8;
+}
+
+/*----------------------Tablet-------------------------*/
+@media (max-width: 900px){
+	a h1{
+		color: blue;
+	}
+
+	html{
+		font-size:150%;
+		min-width: 480px;
+	}
+	
+	form{
+		margin: 20px;
+	}
+
+	ol li{
+		margin: 10px;
+	}
+
+	input#name{
+		width: 40%;
+	}
+
+	input#email{
+		width: 85%;
+	}
+
+	input#street{
+		width: 88%
+	}
+
+	input#city{
+		width: 90.5%
+	}
+}
+
+/*-------------------------Phone----------------------------*/
+@media (max-width: 480px){
+	a h1{
+		color: purple;
+	}
+
+	html{
+		font-size:150%;
+	}
+
+	nav{
+		max-width: 480px;
+		text-align: center;
+	}
+
+	nav a h1{
+		float: none;
+		margin: 0;
+		font-size: 50px;
+	}
+
+	nav ul li{
+		float: none;
+		font-size: 30px;
+		text-align: center;
+		margin: 20px;
+	}
+
+	form{
+		margin: 20px;
+	}
+
+	input#name{
+		width: 35%;
+	}
+
+	input#email{
+		width: 75%;
+	}
+
+	input#street{
+		width: 75%
+	}
+
+	input#city{
+		width: 80%
+	}
+
+	ol li{
+		margin: 10px;
+	}
+}
