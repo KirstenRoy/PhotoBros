@@ -100,24 +100,36 @@ h4{
 footer{
 	clear: both;
 	text-align: center;
-	margin-top: 6em;
+	margin-top: 500px;
 	color: #adadad;
 	font-size: 80%;
 	border-top: 1px dotted #e8e8e8;
 }
 
-@media (max-width: 601px){
+/*----------------------Tablet-------------------------*/
+@media (max-width: 900px){
+	h1{
+		color: blue;
+	}
+
 	html{
 		font-size:150%;
+		min-width: 480px;
 	}
 	
-	.background img{
-		height: 100%;
-		width:auto;	
+	.container{
+		margin-top: -50px;
+		padding-top: -50px;
+		width: 100%;
+		position: relative;
+		top: 45px;
+		background-color: none;
 	}
 	
-	.background{
-		height:100%;
+	.container h1{
+		position: relative;
+		color: white;
+		background-color: none;
 	}
 	
 	.textbox .paragraph{
@@ -126,6 +138,8 @@ footer{
 		padding-right: 3%;
 		border-right: hidden;
 		border-bottom: 3px solid #1E1E1E;
+		color: white;
+		background-color: none;
 	}
 	
 	.textbox .updates{
@@ -134,5 +148,32 @@ footer{
 		width: 90%;
 		margin-left: 4%;
 		padding-right: 3%;
+		color: white;
 	}
+}
+
+/*-------------------------Phone----------------------------*/
+@media (max-width: 480px){
+	h1{
+		color: purple;
+	}
+
+	html{
+		font-size:150%;
+		min-width: 400px;
+	}
+
+	nav{
+		max-width: 480px;
+	}
+
+	.container{
+		margin-top: -50px;
+		padding-top: -50px;
+		width: 100%;
+	}
+	.container h1{
+		position: relative;
+	}
+
 }
